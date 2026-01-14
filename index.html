@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            max-width: 100%; /* Responsif */
+            height: auto; /* Responsif */
+        }
+        .product img:hover {
+            transform: scale(1.05);
+        }
+        .product-details {
+            flex: 1;
+        }
+        .product h2 {
+            margin-top: 0;
+            transition: color 0.3s ease;
+        }
+        .product:hover h2 {
+            color: #007bff;
+        }
+        .product a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .product a:hover {
+            color: #0056b3;
+        }
+        .details {
+            margin-top: 10px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        .product:hover .details {
+            opacity: 1;
+        }
+        .details p {
+            margin: 5px 0;
+        }
+        .buy-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .buy-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Media Queries untuk Responsivitas Mobile */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+            header p {
+                font-size: 14px;
+            }
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            .product {
+                flex-direction: column; /* Gambar di atas detail pada mobile */
+                align-items: center;
+                text-align: center;
+            }
+            .product img {
+                width: 100%;
+                max-width: 300px;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            .product-details {
+                flex: none;
+                width: 100%;
+            }
+            .buy-btn {
+                width: 100%;
+                padding: 12px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>List Properti cuy</h1>
+        <p>reiganteng</p>
+    </header>
+    <div class="container">
+        <div class="product">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lygi8lj72ze5d3@resize_w450_nl.webp" alt="Pompom Cheers">
+            <div class="product-details">
+                <h2>Pompom Cheers</h2>
+                <div class="details">
+                    <p><strong>Warna:</strong> Gold, Merah, Silver, Biru, Hijau, Pink</p>
+                    <p><strong>Rentang Harga:</strong> 9.000 - 10.000 / pcs</p>
+                    <p><strong>Pengiriman dari:</strong> Kab. Tangerang</p>
+                </div>
+                <button class="buy-btn" onclick="window.open('https://shopee.co.id/product/415050355/29756880801?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkWVp3RFo3Mkw5czd4Z0hzdEF1WVFibmN6OFJGcThBVndncHQ0aWRwcTRwWHVvZ0VMN21SdW1jZVY1SFMvSTg3NTJySHVUanVZbDJONmFZSG5QaFRpbENnZ1NGSUhZYjh1eUtvZ0sySVFiZTFKUWI0OXdncUxYZ0RBMm5JRDBUdnFRPT0&utm_source=chatgpt.com', '_blank')">Beli Sekarang</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://down-id.img.susercontent.com/file/17b7dcc547f0cd70db7cba5e561c6463@resize_w450_nl.webp" alt="Headband Sport">
+            <div class="product-details">
+                <h2>Headband Sport</h2>
+                <div class="details">
+                    <p><strong>Warna:</strong> Putih, Rose, Hitam, Merah, Biru, Hijau, Ungu, Pink</p>
+                    <p><strong>Harga:</strong> 4.027 / pcs</p>
+                    <p><strong>Pengiriman dari:</strong> Kab. Tangerang</p>
+                </div>
+                <button class="buy-btn" onclick="window.open('https://shopee.co.id/YUKSHOPING-Mini-Hairband-Sport-Headband-Sport-R496-i.206351392.13818245762?extraParams=%7B%22display_model_id%22%3A112755326210%2C%22model_selection_logic%22%3A2%7D&sp_atk=4bc1a358-0d39-4a53-9700-70112331890f&xptdk=4bc1a358-0d39-4a53-9700-70112331890f', '_blank')">Beli Sekarang</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rfh6-m3afjhlca47a5c@resize_w450_nl.webp" alt="Kacamata Neon">
+            <div class="product-details">
+                <h2>Kacamata Neon</h2>
+                <div class="details">
+                    <p><strong>Warna:</strong> Pink, Putih, Hijau, Biru, Merah</p>
+                    <p><strong>Harga:</strong> 7.434 / pcs</p>
+                    <p><strong>Pengiriman dari:</strong> Kab. Tangerang</p>
+                </div>
+                <button class="buy-btn" onclick="window.open('https://shopee.co.id/MOMO-JE-F5485-Kacamata-Lampu-LED-Luminous-Kacamata-LED-Colorful-Kacamata-Pesta-Party-Kacamata-Lampu-Neon-Led-Kacamata-DJ-i.1412184678.28569457300?extraParams=%7B%22display_model_id%22%3A237100136986%2C%22model_selection_logic%22%3A2%7D&sp_atk=e7ee5729-a69b-4ad6-a39f-52713474f055&xptdk=e7ee5729-a69b-4ad6-a39f-52713474f055', '_blank')">Beli Sekarang</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
